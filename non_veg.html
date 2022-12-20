@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant-Items</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light lg-dark"   >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="img/logo4.png"target="_blank">
+                <img src="img/logo4.png" alt="logo" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation" >
+                   <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="items.html">Items</a></li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Items
+                        </a>
+                        
+                        <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li class="drop"><a class="dropdown-item" href="tiffin.html">Tiffin</a></li>
+                          <li class="drop"><a class="dropdown-item" href="non_veg.html">Non-Veg</a></li>
+                          <li class="drop"><a class="dropdown-item" href="veg.html">Veg</a></li>
+                          <li class="drop"><a class="dropdown-item" href="soups.html">Soups</a></li>
+                          <li class="drop"><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                          <li class="drop"><a class="dropdown-item" href="juices.html">Juices</a></li>
+                        </ul>
+                      
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb"> -->
+      <ol class="breadcrumb" style="--bs-breadcrumb-divider: '>'; margin-left:20px;" aria-label="breadcrumb">
+        <li class="breadcrumb-item active"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active"><a href="#">Items</a></li>
+        <li class="breadcrumb-item active"><a href="non_veg.html">Non-Veg</a></li>
+      </ol>
+
+      <h1 class="heading">Non-veg items</h1>
+  <div class="container">
+    <div class="row">
+       <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/chicken-biryani.jpg" alt="chicken-biryani" >
+              <div class="card-body">
+                <h3 id="item">Chicken Biryani</h3>
+                <h6> COST : 160&#8377 </h6> 
+              </div>
+              <input type="button" id="item1"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/Mutton-Biryani.jpg" alt="Mutton-Biryani" >
+              <div class="card-body">
+                <h3 id="item">Mutton Biryani</h3>
+                <h6> COST : 180&#8377 </h6> 
+              </div>
+              <input type="button" id="item2"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/fish-biryani.jpg" alt="fish-biryani" >
+              <div class="card-body">
+                <h3 id="item">Fish Biryani</h3>
+                <h6> COST : 150&#8377 </h6> 
+              </div>
+              <input type="button" id="item3"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/prawn-biryani.jpg" alt="prawn-biryani" >
+              <div class="card-body">
+                <h3 id="item">Prawn Biryani</h3>
+                <h6> COST : 150&#8377 </h6> 
+              </div>
+              <input type="button" id="item4"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/egg-biryani.jpg" alt="egg-biryani" >
+              <div class="card-body">
+                <h3 id="item">Egg Biryani</h3>
+                <h6> COST : 130&#8377 </h6> 
+              </div>
+              <input type="button" id="item5"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/egg-puff.JPG" alt="egg-puff" >
+              <div class="card-body">
+                <h3 id="item">Egg puff</h3>
+                <h6> COST : 20&#8377 </h6> 
+              </div>
+              <input type="button" id="item11"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/chicken-puff.jpg" alt="chicken-puff" >
+              <div class="card-body">
+                <h3 id="item">Chicken Puff</h3>
+                <h6> COST : 30&#8377 </h6> 
+              </div>
+              <input type="button" id="item12"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+         
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/chicken_roll.jpg" alt="chicken_roll" >
+              <div class="card-body">
+                <h3 id="item">Chicken Roll</h3>
+                <h6> COST : 30&#8377 </h6> 
+              </div>
+              <input type="button" id="item13"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+          
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/Butter-Chicken-Roll.jpg" alt="Butter-Chicken-Roll" >
+              <div class="card-body">
+                <h3 id="item">Butter Chicken Roll</h3>
+                <h6> COST : 40&#8377 </h6> 
+              </div>
+              <input type="button" id="item14"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/chicken-burger.jpg" alt="chicken-burger" >
+              <div class="card-body">
+                <h3 id="item">Chicken Burger</h3>
+                <h6> COST : 80&#8377 </h6> 
+              </div>
+              <input type="button" id="item15"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/chicken-pizza.jpg" alt="chicken-pizza" >
+              <div class="card-body">
+                <h3 id="item">Chicken Pizza</h3>
+                <h6> COST : 100&#8377 </h6> 
+              </div>
+              <input type="button" id="item16"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/chicken-sandwich.jpg" alt="chicken-sandwich" >
+              <div class="card-body">
+                <h3 id="item">Chicken Sandwich</h3>
+                <h6> COST : 35&#8377 </h6> 
+              </div>
+              <input type="button" id="item17"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/egg_noodles.jpg" alt="egg_noodles" >
+              <div class="card-body">
+                <h3 id="item">Egg Noodles</h3>
+                <h6> COST : 50&#8377 </h6> 
+              </div>
+              <input type="button" id="item18"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/egg_freid_rice.jpg" alt="egg_freid_rice" >
+              <div class="card-body">
+                <h3 id="item">Egg Freid Rice</h3>
+                <h6> COST : 50&#8377 </h6> 
+              </div>
+              <input type="button" id="item19"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/chicken_noodles.jpg" alt="chicken_noodles" >
+              <div class="card-body">
+                <h3 id="item">Chicekn Noodles</h3>
+                <h6> COST : 60&#8377 </h6> 
+              </div>
+              <input type="button" id="item20"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/chicken_fried_rice.jpg" alt="chicken_fried_rice" >
+              <div class="card-body">
+                <h3 id="item">Chicken Freid Rice</h3>
+                <h6> COST : 60&#8377 </h6> 
+              </div>
+              <input type="button" id="item21"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/chicken_manchurya.jpg" alt="chicken_manchurya" >
+              <div class="card-body">
+                <h3 id="item">Chicken Manchurian</h3>
+                <h6> COST : 80&#8377 </h6> 
+              </div>
+              <input type="button" id="item22"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/chicken_65.jpg" alt="chicken_65" >
+              <div class="card-body">
+                <h3 id="item">Chicken 65</h3>
+                <h6> COST : 80&#8377 </h6> 
+              </div>
+              <input type="button" id="item23"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/chicken_lollipop.jpg" alt="chicken_lollipop" >
+              <div class="card-body">
+                <h3 id="item">Chicken Lollipop</h3>
+                <h6> COST : 80&#8377 </h6> 
+              </div>
+              <input type="button" id="item24"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/Chilly_Chicken.jpg" alt="Chilly_Chicken" >
+              <div class="card-body">
+                <h3 id="item">Chilli Chicken</h3>
+                <h6> COST : 80&#8377 </h6> 
+              </div>
+              <input type="button" id="item25"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/Egg_bhurji.jpg" alt="Egg_bhurji" >
+              <div class="card-body">
+                <h3 id="item">Egg Bhurji</h3>
+                <h6> COST : 30&#8377 </h6> 
+              </div>
+              <input type="button" id="item26"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/omllete.jpg" alt="omllete" >
+              <div class="card-body">
+                <h3 id="item">Omelette</h3>
+                <h6> COST : 30&#8377 </h6> 
+              </div>
+              <input type="button" id="item27"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/bread_omllet.jpg" alt="bread_omllet" >
+              <div class="card-body">
+                <h3 id="item">bread omelette</h3>
+                <h6> COST : 40&#8377 </h6> 
+              </div>
+              <input type="button" id="item28"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/boiled-egg.jpg" alt="boiled-egg" >
+              <div class="card-body">
+                <h3 id="item">Boiled Egg</h3>
+                <h6> COST : 10&#8377 </h6> 
+              </div>
+              <input type="button" id="item29"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+    </div>
+  </div>
+
+  <br>
+<br>
+<br>
+<footer>
+  <ul class="social-media">
+    <li class="">
+        <a href="https://www.facebook.com/profile.php?id=100052377316483/"target="_blank"><i class="bx bxl-facebook-square"></i></a>
+    </li>
+      <li class="">
+        <a href="https://www.instagram.com/sureshrathod_357/"target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+    </li>
+    
+    <li class="">
+        <a href="#"target="_blank"><i class="bx bxl-twitter"></i></a>
+    </li>
+    <li class="">
+        <a href="https://www.linkedin.com/in/suresh-ratlavath-88593b209/"target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+    </li>
+  </ul>
+
+  <p style="text-align:center; font-size: 15px; color: #fc2206a3">Developed by Suresh Rathod</p>
+  <p style="text-align:center; font-size: 15px; color: #fc2206a3">copyright@2022 - SJT Restaurant</p>
+
+
+</footer>
+     <script src="js/process2.js"></script>
+      <script src="js/bootstrap.js"></script>
+</body>
+</html>

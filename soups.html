@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant-Items</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light lg-dark"   >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="img/logo4.png"target="_blank">
+                <img src="img/logo4.png" alt="logo" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation" >
+                   <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="items.html">Items</a></li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Items
+                        </a>
+                        
+                        <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li class="drop"><a class="dropdown-item" href="tiffin.html">Tiffin</a></li>
+                          <li class="drop"><a class="dropdown-item" href="non_veg.html">Non-Veg</a></li>
+                          <li class="drop"><a class="dropdown-item" href="veg.html">Veg</a></li>
+                          <li class="drop"><a class="dropdown-item" href="soups.html">Soups</a></li>
+                          <li class="drop"><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                          <li class="drop"><a class="dropdown-item" href="juices.html">Juices</a></li>
+                        </ul>
+                      
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb"> -->
+      <ol class="breadcrumb" style="--bs-breadcrumb-divider: '>'; margin-left:20px;" aria-label="breadcrumb">
+        <li class="breadcrumb-item active"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active"><a href="#">Items</a></li>
+        <li class="breadcrumb-item active"><a href="soups.html">Soups</a></li>   
+      </ol>
+
+      <h1 class="heading">BreakFast items</h1>
+  <div class="container">
+    <div class="row">
+       <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/mushroom-soup.jpg" alt="mushroom-soup" >
+              <div class="card-body">
+                <h3 id="item">Mushroom Soup</h3>
+                <h6> COST : 30&#8377 </h6> 
+              </div>
+              <input type="button" id="item1"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/chicken-soup.jpg" alt="chicken-soup" >
+              <div class="card-body">
+                <h3 id="item">Chicken Soup</h3>
+                <h6> COST : 50&#8377 </h6> 
+              </div>
+              <input type="button" id="item2"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/tamato-soup.jpg" alt="tamato-soup" >
+              <div class="card-body">
+                <h3 id="item">Tamato Soup</h3>
+                <h6> COST : 20&#8377 </h6> 
+              </div>
+              <input type="button" id="item3"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/MUTTON-SOUP.jpg" alt="MUTTON-SOUP" >
+              <div class="card-body">
+                <h3 id="item">Mutton Soup</h3>
+                <h6> COST : 60&#8377 </h6> 
+              </div>
+              <input type="button" id="item4"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/fish-soup.jpg" alt="fish-soup" >
+              <div class="card-body">
+                <h3 id="item">Fish Soup</h3>
+                <h6> COST : 45&#8377 </h6> 
+              </div>
+              <input type="button" id="item5"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/prawn-soup.jpg" alt="prawn-soup" >
+              <div class="card-body">
+                <h3 id="item">Prawn Soup</h3>
+                <h6> COST : 45&#8377 </h6> 
+              </div>
+              <input type="button" id="item6"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/paneer-soup.jpg" alt="paneer-soup" >
+              <div class="card-body">
+                <h3 id="item">Paneer Soup</h3>
+                <h6> COST : 35&#8377 </h6> 
+              </div>
+              <input type="button" id="item7"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/lentil-soup.jpg" alt="lentil" >
+              <div class="card-body">
+                <h3 id="item">Lentil Soup</h3>
+                <h6> COST : 25&#8377 </h6> 
+              </div>
+              <input type="button" id="item8"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/moong-dal-soup.jpg" alt="moong-dal-soup" >
+              <div class="card-body">
+                <h3 id="item">Moong Dal Soup</h3>
+                <h6> COST : 25&#8377 </h6> 
+              </div>
+              <input type="button" id="item9"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <div class="card"id="imagebox">
+              <img src="img/beef-soup.jpg" alt="beef-soup" >
+              <div class="card-body">
+                <h3 id="item">Beef Soup</h3>
+                <h6> COST : 40&#8377 </h6> 
+              </div>
+              <input type="button" id="item10"value="Order Now" class="btn btn-primary radius"onclick="showMessage(this.id)"/>
+            </div>
+          </div>
+
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<footer>
+  <ul class="social-media">
+    <li class="">
+        <a href="https://www.facebook.com/profile.php?id=100052377316483/"target="_blank"><i class="bx bxl-facebook-square"></i></a>
+    </li>
+      <li class="">
+        <a href="https://www.instagram.com/sureshrathod_357/"target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+    </li>
+    
+    <li class="">
+        <a href="#"target="_blank"><i class="bx bxl-twitter"></i></a>
+    </li>
+    <li class="">
+        <a href="https://www.linkedin.com/in/suresh-ratlavath-88593b209/"target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+    </li>
+  </ul>
+
+  <p style="text-align:center; font-size: 15px; color: #fc2206a3">Developed by Suresh Rathod</p>
+  <p style="text-align:center; font-size: 15px; color: #fc2206a3">copyright@2022 - SJT Restaurant</p>
+
+
+</footer>
+      <script src="js/process4.js"></script>
+      <script src="js/bootstrap.js"></script>
+</body>
+</html>
